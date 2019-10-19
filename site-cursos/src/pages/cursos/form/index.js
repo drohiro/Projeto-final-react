@@ -5,8 +5,8 @@ export default class Formulario extends React.Component {
     initialState = {codigo: 0, descricao: '', cargaHoraria: 0, preco: 0.0, categoria: 'REDES' }
 
     constructor(props) {
-    super(props)
-    this.state = this.initialState
+        super(props)
+        this.state = this.initialState
     }
 
     alteraCodigo = function (codigo){
