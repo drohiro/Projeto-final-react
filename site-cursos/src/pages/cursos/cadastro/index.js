@@ -17,7 +17,7 @@ export default class Cadastro extends React.Component {
     }
 
     listar() {
-        axios.get(URL).then(responde => this.setState({...this.state}))
+        axios.get(URL).then(responde => this.setState({...this.state, data : Response.data}))
     }
 
     render(){
@@ -27,7 +27,7 @@ export default class Cadastro extends React.Component {
                     <CursoForm />
                 </div>
                 <div className="col-md-6">
-                    <CursoList />
+                    <CursoList  batatas={this.state.data}/>
                 </div>
             </div>
         )
