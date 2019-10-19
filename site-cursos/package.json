@@ -29,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "popper.js": "^1.16.0",
+    "query": "^0.2.0"
   }
 }
