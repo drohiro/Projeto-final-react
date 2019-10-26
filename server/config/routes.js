@@ -1,4 +1,5 @@
 const curso = require('../api/curso')
+const contato = require('../api/contato')
 const express = require('express')
 
 module.exports = function (server) {
@@ -7,4 +8,5 @@ module.exports = function (server) {
     server.use('/api', router);
     //rotas relacionadas às operações com cursos e contatos
     curso.register(router, '/curso');
+    contato.register(router, '/contato');
 };
